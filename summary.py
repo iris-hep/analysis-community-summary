@@ -9,33 +9,41 @@ if __name__ == "__main__":
     # Ending header with colon right aligns
     summary_table += f"{'-' * 81}-|-{'-' * 5}:|-{'-' * 5}:|-{'-' * 5}:|-{'-' * 4}:\n"
 
-    all_stars = 0
-    all_watchers = 0
-    all_forks = 0
-    all_reach = 0
+    all_stars = set()
+    all_watchers = set()
+    all_forks = set()
+
     for repo in data:
-        if repo != "root-project/root":
+        if repo not in [
+            "iris-hep/func_adl_servicex",
+            "iris-hep/func_adl_uproot",
+            "iris-hep/func_adl_xAOD",
+            "root-project/root",
+        ]:
+            # if repo != "root-project/root":
             repo_data = data[repo]
 
             stargazer_ids = set(repo_data["stargazer_ids"])
             watcher_ids = set(repo_data["watcher_ids"])
             fork_owner_ids = set(repo_data["fork_owner_ids"])
+            reach = stargazer_ids | watcher_ids | fork_owner_ids
 
             star_count = repo_data["star_count"]
             watcher_count = repo_data["watcher_count"]
             fork_count = repo_data["fork_count"]
-            reach_count = len(stargazer_ids | watcher_ids | fork_owner_ids)
+            reach_count = len(reach)
 
             repo_markdown_link = f"[{repo}](https://github.com/{repo})"
             summary_table += f"{repo_markdown_link:81} | {star_count:5} | {watcher_count:5} | {fork_count:5} | {reach_count:5}\n"
 
-            all_stars += star_count
-            all_watchers += watcher_count
-            all_forks += fork_count
-            all_reach += reach_count
+            all_stars.update(stargazer_ids)
+            all_watchers.update(watcher_ids)
+            all_forks.update(fork_owner_ids)
+
+    all_reach = all_stars | all_watchers | all_forks
 
     summary_table += f"{'-' * 81}-|-{'-' * 5}:|-{'-' * 5}:|-{'-' * 5}:|-{'-' * 4}:\n"
-    summary_table += f"{'All IRIS-HEP Analysis Systems':81} | {all_stars:5} | {all_watchers:5} | {all_forks:5} | {all_reach:5}\n"
+    summary_table += f"{'All IRIS-HEP Analysis Systems':81} | {len(all_stars):5} | {len(all_watchers):5} | {len(all_forks):5} | {len(all_reach):5}\n"
 
     for repo in data:
         if repo == "root-project/root":
@@ -44,11 +52,12 @@ if __name__ == "__main__":
             stargazer_ids = set(repo_data["stargazer_ids"])
             watcher_ids = set(repo_data["watcher_ids"])
             fork_owner_ids = set(repo_data["fork_owner_ids"])
+            reach = stargazer_ids | watcher_ids | fork_owner_ids
 
             star_count = repo_data["star_count"]
             watcher_count = repo_data["watcher_count"]
             fork_count = repo_data["fork_count"]
-            reach_count = len(stargazer_ids | watcher_ids | fork_owner_ids)
+            reach_count = len(reach)
 
             repo_markdown_link = f"[{repo}](https://github.com/{repo})"
             summary_table += f"{repo_markdown_link:81} | {star_count:5} | {watcher_count:5} | {fork_count:5} | {reach_count:5}\n"

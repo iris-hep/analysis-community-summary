@@ -48,6 +48,7 @@ jobs:
         mkdir deploy
         cp README.md deploy/
         cp repo_data.json deploy/
+        cp summary.csv deploy/
         cp summary.md deploy/
         ls -lhtra deploy
 

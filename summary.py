@@ -7,8 +7,6 @@ if __name__ == "__main__":
     with open(Path().cwd().joinpath("repo_data.json")) as read_file:
         data = json.load(read_file)
 
-    current_date = pd.to_datetime("today", yearfirst=True).date().isoformat()
-
     table = {
         "repositories": [],
         "stars": [],
@@ -73,28 +71,34 @@ if __name__ == "__main__":
         table["forks"].append(fork_count)
         table["reach"].append(reach_count)
 
-    summary_table = pd.DataFrame(table)
+    summary_df = pd.DataFrame(table)
+
+    csv_df = summary_df.copy()
+    current_date = pd.to_datetime("today", yearfirst=True).date().isoformat()
+    csv_df.insert(0, "date", current_date)
+    csv_df.to_csv("summary.csv", index=False)
+    csv_df.to_csv("summary_no_header.csv", header=False, index=False)
 
     print(
-        summary_table.to_markdown(
+        summary_df.to_markdown(
             headers=["GitHub Repository", "Stars", "Watchers", "Forks", "Reach"],
             index=False,
         )
     )
 
     # Make names links for Markdown
-    summary_table["repositories"] = [
+    summary_df["repositories"] = [
         f"[{repo_name}](https://github.com/{repo_name})"
         if repo_name in data
         else repo_name
-        for repo_name in summary_table["repositories"]
+        for repo_name in summary_df["repositories"]
     ]
-    table_markdown = summary_table.to_markdown(
+    table_markdown = summary_df.to_markdown(
         headers=["GitHub Repository", "Stars", "Watchers", "Forks", "Reach"],
         index=False,
     )
 
-    with open("summary_table.md", "w") as table_file:
+    with open("summary.md", "w") as table_file:
         file_str = "\n## Summary Table\n\n"
         file_str += "* **Stars**: Number of stars the project has on GitHub\n"
         file_str += "* **Watchers**: Number of watchers the project has on GitHub\n"

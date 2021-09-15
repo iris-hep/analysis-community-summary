@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 
 if __name__ == "__main__":
-    with open(Path().cwd().joinpath("repodata.json")) as read_file:
+    with open(Path().cwd().joinpath("repo_data.json")) as read_file:
         repo_data = json.load(read_file)
 
     summary_table = f"{'GitHub repository':30} | {'stars':5} | {'watch':5} | {'forks':5} | {'reach':5}\n"

@@ -1,6 +1,5 @@
 import argparse
 import json
-import os
 
 from github import Github
 
@@ -47,8 +46,6 @@ if __name__ == "__main__":
         "scikit-hep/uproot4",
         "scikit-hep/vector",
     ]
-
-    repo_names = repo_names[-2:]  # For testing
 
     github_api = Github(args.access_token)
 

@@ -5,9 +5,9 @@ if __name__ == "__main__":
     with open(Path().cwd().joinpath("repo_data.json")) as read_file:
         data = json.load(read_file)
 
-    summary_table = f"{'GitHub repository':81} | {'Stars':5} | {'Watch':5} | {'Forks':5} | {'Reach':5}\n"
+    summary_table = f"{'GitHub repository':81} | {'Stars':5} | {'Watchers':8} | {'Forks':5} | {'Reach':5}\n"
     # Ending header with colon right aligns
-    summary_table += f"{'-' * 81}-|-{'-' * 5}:|-{'-' * 5}:|-{'-' * 5}:|-{'-' * 4}:\n"
+    summary_table += f"{'-' * 81}-|-{'-' * 5}:|-{'-' * 8}:|-{'-' * 5}:|-{'-' * 4}:\n"
 
     all_stars = set()
     all_watchers = set()
@@ -28,7 +28,7 @@ if __name__ == "__main__":
             reach_count = len(reach)
 
             repo_markdown_link = f"[{repo}](https://github.com/{repo})"
-            summary_table += f"{repo_markdown_link:81} | {star_count:5} | {watcher_count:5} | {fork_count:5} | {reach_count:5}\n"
+            summary_table += f"{repo_markdown_link:81} | {star_count:5} | {watcher_count:8} | {fork_count:5} | {reach_count:5}\n"
 
             all_stars.update(stargazer_ids)
             all_watchers.update(watcher_ids)
@@ -36,8 +36,8 @@ if __name__ == "__main__":
 
     all_reach = all_stars | all_watchers | all_forks
 
-    summary_table += f"{'-' * 81}-|-{'-' * 5}:|-{'-' * 5}:|-{'-' * 5}:|-{'-' * 4}:\n"
-    summary_table += f"{'All IRIS-HEP Analysis Systems':81} | {len(all_stars):5} | {len(all_watchers):5} | {len(all_forks):5} | {len(all_reach):5}\n"
+    summary_table += f"{'-' * 81}-|-{'-' * 5}:|-{'-' * 8}:|-{'-' * 5}:|-{'-' * 4}:\n"
+    summary_table += f"{'All IRIS-HEP Analysis Systems':81} | {len(all_stars):5} | {len(all_watchers):8} | {len(all_forks):5} | {len(all_reach):5}\n"
 
     for repo in data:
         if repo == "root-project/root":
@@ -54,7 +54,7 @@ if __name__ == "__main__":
             reach_count = len(reach)
 
             repo_markdown_link = f"[{repo}](https://github.com/{repo})"
-            summary_table += f"{repo_markdown_link:81} | {star_count:5} | {watcher_count:5} | {fork_count:5} | {reach_count:5}\n"
+            summary_table += f"{repo_markdown_link:81} | {star_count:5} | {watcher_count:8} | {fork_count:5} | {reach_count:5}\n"
 
     with open("summary.md", "w") as write_file:
         write_file.write("\n## Summary Table\n\n")

@@ -14,13 +14,7 @@ if __name__ == "__main__":
     all_forks = set()
 
     for repo in data:
-        if repo not in [
-            "iris-hep/func_adl_servicex",
-            "iris-hep/func_adl_uproot",
-            "iris-hep/func_adl_xAOD",
-            "root-project/root",
-        ]:
-            # if repo != "root-project/root":
+        if repo != "root-project/root":
             repo_data = data[repo]
 
             stargazer_ids = set(repo_data["stargazer_ids"])

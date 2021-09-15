@@ -41,11 +41,11 @@ jobs:
 
     - name: Perform query of repositories
       run: |
-        python query_api.py ${{ secrets.ACCESS_TOKEN }}
+        python query.py ${{ secrets.ACCESS_TOKEN }}
 
     - name: Generate summary table
       run: |
-        python summary_api.py
+        python summary.py
 
     - name: Setup files to deploy
       run: |

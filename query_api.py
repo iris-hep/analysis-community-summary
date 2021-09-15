@@ -36,13 +36,12 @@ if __name__ == "__main__":
         "scikit-hep/vector",
     ]
 
-    # repo_names = repo_names[-2:]
-    # print(repo_names)
+    repo_names = repo_names[-2:]  # For testing
 
     try:
-        github_access_token = os.environ["API_TOKEN"]
+        github_access_token = os.environ["ACCESS_TOKEN"]
     except KeyError:
-        print("\nThe environmental variable 'API_TOKEN' has not been set.\n")
+        print("\nThe environmental variable 'ACCESS_TOKEN' has not been set.\n")
         raise
 
     github_api = Github(github_access_token)

@@ -5,6 +5,8 @@ on:
     # branches:
     # - main
   pull_request:
+    branches:
+    - main
   # Run daily at 0:01 UTC
   schedule:
   - cron:  '1 0 * * *'
@@ -49,6 +51,7 @@ jobs:
 
     - name: Setup files to deploy
       run: |
+        cat summary.md >> README.md
         mkdir deploy
         cp README.md deploy/
         cp repo_data.json deploy/
@@ -56,6 +59,7 @@ jobs:
 
     - name: Deploy summary to GitHub Pages
       # if: success() && github.event_name == 'push' && github.ref == 'refs/heads/main'
+      if: success() && github.event_name != 'pull_request'
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}

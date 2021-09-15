@@ -2,8 +2,8 @@ name: Summary
 
 on:
   push:
-    # branches:
-    # - main
+    branches:
+    - main
   pull_request:
     branches:
     - main
@@ -58,8 +58,7 @@ jobs:
         cp summary.md deploy/
 
     - name: Deploy summary to GitHub Pages
-      # if: success() && github.event_name == 'push' && github.ref == 'refs/heads/main'
-      if: success() && github.event_name != 'pull_request'
+      if: success() && github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}

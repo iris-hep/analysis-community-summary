@@ -77,7 +77,6 @@ if __name__ == "__main__":
     current_date = pd.to_datetime("today", yearfirst=True).date().isoformat()
     csv_df.insert(0, "date", current_date)
     csv_df.to_csv("summary.csv", index=False)
-    csv_df.to_csv("summary_no_header.csv", header=False, index=False)
 
     print(
         summary_df.to_markdown(

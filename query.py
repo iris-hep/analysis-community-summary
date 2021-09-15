@@ -18,12 +18,12 @@ if __name__ == "__main__":
         "alexander-held/cabinetry",
         "diana-hep/excursion",
         "diana-hep/madminer",
-        "func_adl_servicex",
-        "func_adl_uproot",
-        "func_adl_xAOD",
         "gordonwatts/hep_tables",
         "iris-hep/adl-benchmarks-index",
         "iris-hep/func_adl",
+        "iris-hep/func_adl_servicex",
+        "iris-hep/func_adl_uproot",
+        "iris-hep/func_adl_xAOD",
         "iris-hep/qastle",
         "reanahub/reana",
         "root-project/root",
@@ -44,8 +44,27 @@ if __name__ == "__main__":
         "scikit-hep/vector",
     ]
 
-    data = {
-        repo_name: {
+    # data = {
+    #     repo_name: {
+    #         "stars": get_page(
+    #             f"https://api.github.com/repos/{repo_name}/stargazers?per_page=100"
+    #         ),
+    #         "watchers": get_page(
+    #             f"https://api.github.com/repos/{repo_name}/subscribers?per_page=100"
+    #         ),
+    #         "forks": get_page(
+    #             f"https://api.github.com/repos/{repo_name}/forks?per_page=100"
+    #         ),
+    #     }
+    #     for repo_name in repo_names
+    # }
+
+    repo_name = repo_names[-2:]
+    print(repo_name)
+
+    data = {}
+    for repo_name in repo_names:
+        data[repo_name] = {
             "stars": get_page(
                 f"https://api.github.com/repos/{repo_name}/stargazers?per_page=100"
             ),
@@ -56,8 +75,6 @@ if __name__ == "__main__":
                 f"https://api.github.com/repos/{repo_name}/forks?per_page=100"
             ),
         }
-        for repo_name in repo_names
-    }
 
     with open("repo_data.json", "w") as write_file:
         write_file.write(json.dumps(data))

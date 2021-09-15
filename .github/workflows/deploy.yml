@@ -1,0 +1,63 @@
+name: Summary
+
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
+  # Run daily at 0:01 UTC
+  schedule:
+  - cron:  '1 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.9]
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip setuptools wheel
+        python -m pip --quiet install --requirement requirements.txt
+        python -m pip list
+
+    - name: Perform query of repositories
+      run: |
+        python query.py ${{ secrets.ACCESS_TOKEN }}
+
+    - name: Generate summary table
+      run: |
+        python summary.py
+
+    - name: Setup files to deploy
+      run: |
+        cat summary.md >> README.md
+        mkdir deploy
+        cp README.md deploy/
+        cp repo_data.json deploy/
+        cp summary.md deploy/
+
+    - name: Deploy summary to GitHub Pages
+      if: success() && github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: deploy
+        enable_jekyll: true # for README render
+        force_orphan: true
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
+        commit_message: Deploy to GitHub pages

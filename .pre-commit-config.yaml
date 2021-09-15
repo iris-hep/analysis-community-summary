@@ -1,0 +1,40 @@
+ci:
+  autoupdate_commit_msg: "chore: [pre-commit.ci] pre-commit autoupdate"
+  autoupdate_schedule: "quarterly"
+
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+    - id: check-added-large-files
+    - id: check-case-conflict
+    - id: check-merge-conflict
+    - id: check-symlinks
+    - id: check-json
+    - id: check-yaml
+    - id: check-toml
+    - id: check-xml
+    - id: debug-statements
+    - id: end-of-file-fixer
+    - id: mixed-line-ending
+    - id: trailing-whitespace
+
+-   repo: https://github.com/asottile/pyupgrade
+    rev: v2.26.0
+    hooks:
+    - id: pyupgrade
+
+-   repo: https://github.com/pycqa/isort
+    rev: 5.9.3
+    hooks:
+    - id: isort
+
+-   repo: https://github.com/PyCQA/flake8
+    rev: 3.9.2
+    hooks:
+    - id: flake8
+
+-   repo: https://github.com/psf/black
+    rev: 21.9b0
+    hooks:
+    - id: black-jupyter

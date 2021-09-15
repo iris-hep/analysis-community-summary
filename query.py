@@ -54,7 +54,7 @@ if __name__ == "__main__":
         repo = github_api.get_repo(repo_name)
         data[repo_name] = {
             "stars": repo.stargazers_count,
-            "watchers": repo.watchers_count,
+            "watchers": repo.subscribers_count,
             "forks": repo.forks_count,
             "releases": repo.get_releases().totalCount,
         }

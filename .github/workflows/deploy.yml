@@ -28,13 +28,6 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
 
-    - name: Get environment info
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-      run: |
-        printenv
-        echo "${ACCESS_TOKEN}" | wc --chars
-
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip setuptools wheel

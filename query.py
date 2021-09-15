@@ -60,4 +60,4 @@ if __name__ == "__main__":
         }
 
     with open("repo_data.json", "w") as write_file:
-        write_file.write(json.dumps(data))
+        write_file.write(json.dumps(data, indent=4))

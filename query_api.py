@@ -2,7 +2,6 @@ import argparse
 import json
 import os
 
-import click
 from github import Github
 
 if __name__ == "__main__":

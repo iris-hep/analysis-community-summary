@@ -1,9 +1,22 @@
+import argparse
 import json
 import os
 
+import click
 from github import Github
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(
+        description="Query the GitHub API for information on repositories."
+    )
+    parser.add_argument(
+        "access_token",
+        metavar="ACCESS_TOKEN",
+        type=str,
+        help="GitHub access token",
+    )
+    args = parser.parse_args()
+
     repo_names = [
         "GooFit/AmpGen",
         "GooFit/GooFit",
@@ -38,13 +51,7 @@ if __name__ == "__main__":
 
     repo_names = repo_names[-2:]  # For testing
 
-    try:
-        github_access_token = os.environ["ACCESS_TOKEN"]
-    except KeyError:
-        print("\nThe environmental variable 'ACCESS_TOKEN' has not been set.\n")
-        raise
-
-    github_api = Github(github_access_token)
+    github_api = Github(args.access_token)
 
     data = {}
     for repo_name in repo_names:

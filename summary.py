@@ -5,7 +5,7 @@ if __name__ == "__main__":
     with open(Path().cwd().joinpath("repo_data.json")) as read_file:
         data = json.load(read_file)
 
-    summary_table = f"{'GitHub repository':81} | {'Stars':5} | {'Watch':5} | {'Forks':5}| {'Reach':5}\n"
+    summary_table = f"{'GitHub repository':81} | {'Stars':5} | {'Watch':5} | {'Forks':5} | {'Reach':5}\n"
     # Ending header with colon right aligns
     summary_table += f"{'-' * 81}-|-{'-' * 5}:|-{'-' * 5}:|-{'-' * 5}:|-{'-' * 4}:\n"
 

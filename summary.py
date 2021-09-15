@@ -57,7 +57,15 @@ if __name__ == "__main__":
             summary_table += f"{repo_markdown_link:81} | {star_count:5} | {watcher_count:8} | {fork_count:5} | {reach_count:5}\n"
 
     with open("summary.md", "w") as write_file:
-        write_file.write("\n## Summary Table\n\n")
+        file_str = "\n## Summary Table\n\n"
+        file_str += "* **Stars**: Number of stars the project has on GitHub\n"
+        file_str += "* **Watchers**: Number of watchers the project has on GitHub\n"
+        file_str += "* **Forks**: Number of forks of the project on GitHub\n"
+        file_str += "* **Reach**: The number of unique GitHub users who have"
+        file_str += " either starred, watched, or forked the project\n"
+        file_str += "\n"
+
+        write_file.write(file_str)
         write_file.write(summary_table)
 
     print(summary_table)

@@ -42,14 +42,26 @@ jobs:
       run: |
         python summary.py
 
+    - name: Update time series of summaries
+      run: |
+        python time_series.py \
+          https://raw.githubusercontent.com/iris-hep/analysis-community-summary/time-series/summary-time-series.csv \
+          --join-csv summary.csv \
+          --out-csv summary-time-series.csv
+
     - name: Setup files to deploy
       run: |
         cat summary.md >> README.md
         mkdir deploy
         cp README.md deploy/
         cp repo_data.json deploy/
+        cp summary.csv deploy/
         cp summary.md deploy/
         ls -lhtra deploy
+
+        mkdir time-series
+        cp summary-time-series.csv time-series/
+        ls -lhtra time-series
 
     - name: Deploy summary to GitHub Pages
       if: success() && github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
@@ -62,3 +74,16 @@ jobs:
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
         commit_message: Deploy to GitHub pages
+
+    - name: Deploy time series
+      if: success() && github.event_name == 'schedule' && github.ref == 'refs/heads/main'
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: time-series
+        publish_dir: time-series
+        enable_jekyll: true  # avoid extra files
+        force_orphan: false  # get commit history
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
+        commit_message: Deploy time series summary

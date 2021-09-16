@@ -44,7 +44,10 @@ jobs:
 
     - name: Update time series of summaries
       run: |
-        python time_series.py
+        python time_series.py \
+          https://raw.githubusercontent.com/iris-hep/analysis-community-summary/time-series/summary-time-series.csv \
+          --join-csv summary.csv \
+          --out-csv summary-time-series.csv
 
     - name: Setup files to deploy
       run: |

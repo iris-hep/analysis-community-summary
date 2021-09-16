@@ -1,11 +1,35 @@
-from pathlib import Path
+import argparse
 
 import pandas as pd
 
 if __name__ == "__main__":
-    url = "https://raw.githubusercontent.com/iris-hep/analysis-community-summary/gh-pages/summary_time_series.csv"
-    update_df = pd.read_csv(url)
-    current_df = pd.read_csv(Path().cwd().joinpath("summary.csv"))
+    parser = argparse.ArgumentParser(description="Update the time series CSV.")
+    parser.add_argument(
+        "in_csv",
+        metavar="IN_CSV",
+        type=str,
+        help="Path of input CSV",
+    )
+    parser.add_argument(
+        "--join-csv",
+        # metavar="JOIN_CSV",
+        dest="join_csv",
+        type=str,
+        default="summary.csv",
+        help="Path of CSV to join or update IN_CSV",
+    )
+    parser.add_argument(
+        "--out-csv",
+        # metavar="OUT_CSV",
+        dest="out_csv",
+        type=str,
+        default="summary-time-series.csv",
+        help="Path of output CSV",
+    )
+    args = parser.parse_args()
+
+    update_df = pd.read_csv(args.in_csv)
+    current_df = pd.read_csv(args.join_csv)
 
     if current_df.date.isin(update_df.date)[0]:
         # Overwrite dataframe with current values
@@ -15,4 +39,4 @@ if __name__ == "__main__":
         # Append current values
         update_df = pd.concat([update_df, current_df])
 
-    update_df.to_csv("summary-time-series.csv", index=False)
+    update_df.to_csv(args.out_csv, index=False)

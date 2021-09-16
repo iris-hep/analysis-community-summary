@@ -82,8 +82,8 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: time-series
         publish_dir: time-series
-        enable_jekyll: true # avoid extra files
-        force_orphan: false
+        enable_jekyll: true  # avoid extra files
+        force_orphan: false  # get commit history
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
         commit_message: Deploy time series summary

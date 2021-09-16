@@ -15,4 +15,4 @@ if __name__ == "__main__":
         # Append current values
         update_df = pd.concat([update_df, current_df])
 
-    update_df.to_csv("summary_time_series.csv", index=False)
+    update_df.to_csv("summary-time-series.csv", index=False)

@@ -53,12 +53,12 @@ jobs:
         cp README.md deploy/
         cp repo_data.json deploy/
         cp summary.csv deploy/
-        cp summary_time_series.csv deploy/
         cp summary.md deploy/
         ls -lhtra deploy
 
-        mkdir time_series
-        cp summary_time_series.csv time_series/
+        mkdir time-series
+        cp summary-time-series.csv time-series/
+        ls -lhtra time-series
 
     - name: Deploy summary to GitHub Pages
       # if: success() && github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
@@ -78,7 +78,8 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: time-series
-        publish_dir: time_series
+        publish_dir: time-series
+        enable_jekyll: true # avoid extra files
         force_orphan: true  # Change this to false
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'

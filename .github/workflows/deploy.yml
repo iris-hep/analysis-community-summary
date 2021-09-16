@@ -44,7 +44,7 @@ jobs:
 
     - name: Update time series of summaries
       run: |
-        python update.py
+        python time_series.py
 
     - name: Setup files to deploy
       run: |

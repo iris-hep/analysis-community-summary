@@ -2,8 +2,8 @@ name: Summary
 
 on:
   push:
-    # branches:
-    # - main
+    branches:
+    - main
   pull_request:
     branches:
     - main
@@ -64,7 +64,7 @@ jobs:
         ls -lhtra time-series
 
     - name: Deploy summary to GitHub Pages
-      # if: success() && github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+      if: success() && github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -76,14 +76,14 @@ jobs:
         commit_message: Deploy to GitHub pages
 
     - name: Deploy time series
-      # if: success() && github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+      if: success() && github.event_name == 'schedule' && github.ref == 'refs/heads/main'
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: time-series
         publish_dir: time-series
         enable_jekyll: true # avoid extra files
-        force_orphan: true  # Change this to false
+        force_orphan: false
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
         commit_message: Deploy time series summary

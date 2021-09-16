@@ -42,6 +42,10 @@ jobs:
       run: |
         python summary.py
 
+    - name: Update time series of summaries
+      run: |
+        python update.py
+
     - name: Setup files to deploy
       run: |
         cat summary.md >> README.md
@@ -49,9 +53,12 @@ jobs:
         cp README.md deploy/
         cp repo_data.json deploy/
         cp summary.csv deploy/
-        cp summary.csv deploy/summary_time_series.csv
+        cp summary_time_series.csv deploy/
         cp summary.md deploy/
         ls -lhtra deploy
+
+        mkdir time_series
+        cp summary_time_series.csv time_series/
 
     - name: Deploy summary to GitHub Pages
       # if: success() && github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
@@ -64,3 +71,15 @@ jobs:
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
         commit_message: Deploy to GitHub pages
+
+    - name: Deploy time series
+      # if: success() && github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: time-series
+        publish_dir: time_series
+        force_orphan: true  # Change this to false
+        user_name: 'github-actions[bot]'
+        user_email: 'github-actions[bot]@users.noreply.github.com'
+        commit_message: Deploy time series summary

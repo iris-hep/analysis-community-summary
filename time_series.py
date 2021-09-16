@@ -12,7 +12,6 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--join-csv",
-        # metavar="JOIN_CSV",
         dest="join_csv",
         type=str,
         default="summary.csv",
@@ -20,7 +19,6 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--out-csv",
-        # metavar="OUT_CSV",
         dest="out_csv",
         type=str,
         default="summary-time-series.csv",

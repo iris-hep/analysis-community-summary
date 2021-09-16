@@ -49,6 +49,7 @@ jobs:
         cp README.md deploy/
         cp repo_data.json deploy/
         cp summary.csv deploy/
+        cp summary.csv deploy/summary_time_series.csv
         cp summary.md deploy/
         ls -lhtra deploy
 

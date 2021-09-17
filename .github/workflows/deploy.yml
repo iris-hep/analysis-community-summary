@@ -90,4 +90,4 @@ jobs:
         force_orphan: false  # get commit history
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
-        commit_message: Deploy time series summary
+        commit_message: Deploy time series summary ${{ steps.prepare.outputs.datetime }}

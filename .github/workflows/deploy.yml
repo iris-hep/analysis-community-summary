@@ -36,7 +36,9 @@ jobs:
 
     - name: Perform query of repositories
       run: |
-        python query.py ${{ secrets.ACCESS_TOKEN }}
+        python query.py \
+          ${{ secrets.ACCESS_TOKEN }} \
+          --query-list projects.json
 
     - name: Generate summary table
       run: |

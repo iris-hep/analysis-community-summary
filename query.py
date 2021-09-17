@@ -37,39 +37,17 @@ if __name__ == "__main__":
         type=str,
         help="GitHub access token",
     )
+    parser.add_argument(
+        "--query-list",
+        dest="query_list",
+        type=str,
+        default="projects.json",
+        help="Path to JSON file containing the project names to query",
+    )
     args = parser.parse_args()
 
-    repo_names = [
-        "GooFit/AmpGen",
-        "GooFit/GooFit",
-        "diana-hep/excursion",
-        "diana-hep/madminer",
-        "gordonwatts/hep_tables",
-        "iris-hep/adl-benchmarks-index",
-        "iris-hep/func_adl",
-        "iris-hep/func_adl_servicex",
-        "iris-hep/func_adl_uproot",
-        "iris-hep/func_adl_xAOD",
-        "iris-hep/qastle",
-        "reanahub/reana",
-        "root-project/root",
-        "scailfin/madminer-workflow",
-        "scikit-hep/awkward-0.x",
-        "scikit-hep/awkward-1.0",
-        "scikit-hep/boost-histogram",
-        "scikit-hep/cabinetry",
-        "scikit-hep/cookie",
-        "scikit-hep/decaylanguage",
-        "scikit-hep/fastjet",
-        "scikit-hep/hist",
-        "scikit-hep/mplhep",
-        "scikit-hep/particle",
-        "scikit-hep/pyhf",
-        "scikit-hep/uhi",
-        "scikit-hep/uproot3",
-        "scikit-hep/uproot4",
-        "scikit-hep/vector",
-    ]
+    with open(args.query_list) as read_file:
+        repo_names = json.load(read_file)["project_name"]
 
     github_api = Github(args.access_token)
 

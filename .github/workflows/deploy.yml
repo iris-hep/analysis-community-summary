@@ -65,7 +65,7 @@ jobs:
         cp summary-time-series.csv time-series/
         ls -lhtra time-series
 
-        echo "::set-output name=datetime::$(date --utc '+%Y-%m-%d %H:%M:%S %Z')"
+        echo "::set-output name=datetime::$(date --utc '+%Y-%m-%d %H:%M %Z')"
 
     - name: Deploy summary to GitHub Pages
       # if: success() && github.event_name != 'pull_request' && github.ref == 'refs/heads/main'

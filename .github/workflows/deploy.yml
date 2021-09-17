@@ -50,6 +50,7 @@ jobs:
           --out-csv summary-time-series.csv
 
     - name: Setup files to deploy
+      id: prepare
       run: |
         cat summary.md >> README.md
         mkdir deploy
@@ -60,8 +61,11 @@ jobs:
         ls -lhtra deploy
 
         mkdir time-series
+        cp summary.csv time-series/
         cp summary-time-series.csv time-series/
         ls -lhtra time-series
+
+        echo "::set-output name=datetime::$(date --utc '+%Y-%m-%d %H:%M %Z')"
 
     - name: Deploy summary to GitHub Pages
       if: success() && github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
@@ -86,4 +90,4 @@ jobs:
         force_orphan: false  # get commit history
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
-        commit_message: Deploy time series summary
+        commit_message: Deploy time series summary ${{ steps.prepare.outputs.datetime }}

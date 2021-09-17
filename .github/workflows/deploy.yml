@@ -50,7 +50,7 @@ jobs:
           --out-csv summary-time-series.csv
 
     - name: Setup files to deploy
-      id: prep
+      id: prepare
       run: |
         cat summary.md >> README.md
         mkdir deploy
@@ -77,7 +77,7 @@ jobs:
         force_orphan: true
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
-        commit_message: 'Deploy to GitHub pages $(date --utc)'
+        commit_message: Deploy to GitHub pages ${{ steps.prepare.outputs.datetime }}
 
     - name: Deploy time series
       if: success() && github.event_name == 'schedule' && github.ref == 'refs/heads/main'

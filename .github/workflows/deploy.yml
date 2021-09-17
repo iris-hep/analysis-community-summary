@@ -60,6 +60,7 @@ jobs:
         ls -lhtra deploy
 
         mkdir time-series
+        cp summary.csv time-series/
         cp summary-time-series.csv time-series/
         ls -lhtra time-series
 

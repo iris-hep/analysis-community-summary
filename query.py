@@ -42,7 +42,7 @@ if __name__ == "__main__":
     repo_names = [
         "GooFit/AmpGen",
         "GooFit/GooFit",
-        "alexander-held/cabinetry",
+        "scikit-hep/cabinetry",
         "diana-hep/excursion",
         "diana-hep/madminer",
         "gordonwatts/hep_tables",

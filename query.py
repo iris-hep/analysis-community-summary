@@ -42,7 +42,6 @@ if __name__ == "__main__":
     repo_names = [
         "GooFit/AmpGen",
         "GooFit/GooFit",
-        "alexander-held/cabinetry",
         "diana-hep/excursion",
         "diana-hep/madminer",
         "gordonwatts/hep_tables",
@@ -58,6 +57,7 @@ if __name__ == "__main__":
         "scikit-hep/awkward-0.x",
         "scikit-hep/awkward-1.0",
         "scikit-hep/boost-histogram",
+        "scikit-hep/cabinetry",
         "scikit-hep/cookie",
         "scikit-hep/decaylanguage",
         "scikit-hep/fastjet",

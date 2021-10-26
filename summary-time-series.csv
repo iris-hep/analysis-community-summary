@@ -1199,3 +1199,33 @@ date,repositories,stars,watchers,forks,reach
 2021-10-25,scikit-hep/vector,29,10,9,38
 2021-10-25,All IRIS-HEP Analysis Systems,1217,134,346,1473
 2021-10-25,root-project/root,1548,112,967,2282
+2021-10-26,GooFit/AmpGen,2,12,14,25
+2021-10-26,GooFit/GooFit,106,23,34,139
+2021-10-26,diana-hep/excursion,17,4,6,21
+2021-10-26,diana-hep/madminer,54,8,29,76
+2021-10-26,gordonwatts/hep_tables,2,2,0,4
+2021-10-26,iris-hep/adl-benchmarks-index,8,8,6,18
+2021-10-26,iris-hep/func_adl,5,8,2,12
+2021-10-26,iris-hep/func_adl_servicex,0,6,1,7
+2021-10-26,iris-hep/func_adl_uproot,0,6,0,6
+2021-10-26,iris-hep/func_adl_xAOD,0,6,3,8
+2021-10-26,iris-hep/qastle,3,3,1,6
+2021-10-26,reanahub/reana,82,20,36,119
+2021-10-26,scailfin/madminer-workflow,4,4,4,6
+2021-10-26,scikit-hep/awkward-0.x,217,15,37,251
+2021-10-26,scikit-hep/awkward-1.0,294,16,40,323
+2021-10-26,scikit-hep/boost-histogram,97,10,14,111
+2021-10-26,scikit-hep/cabinetry,14,1,6,18
+2021-10-26,scikit-hep/cookie,18,3,4,19
+2021-10-26,scikit-hep/decaylanguage,28,6,8,32
+2021-10-26,scikit-hep/fastjet,5,7,3,14
+2021-10-26,scikit-hep/hist,58,10,11,69
+2021-10-26,scikit-hep/mplhep,113,4,28,134
+2021-10-26,scikit-hep/particle,97,8,14,109
+2021-10-26,scikit-hep/pyhf,192,11,62,232
+2021-10-26,scikit-hep/uhi,8,2,2,11
+2021-10-26,scikit-hep/uproot3,319,23,70,375
+2021-10-26,scikit-hep/uproot4,112,16,36,145
+2021-10-26,scikit-hep/vector,29,10,9,38
+2021-10-26,All IRIS-HEP Analysis Systems,1217,134,346,1473
+2021-10-26,root-project/root,1551,111,966,2284

@@ -30,8 +30,8 @@ if __name__ == "__main__":
     current_df = pd.read_csv(args.join_csv)
 
     if current_df.date.isin(update_df.date)[0]:
-        selection = update_df["date"] == current_df["date"][0]
         # Overwrite dataframe with current values
+        selection = update_df["date"] == current_df["date"][0]
         update_df.loc[selection, update_df.keys()] = current_df[update_df.keys()].values
     else:
         # Append current values

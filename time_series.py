@@ -32,7 +32,7 @@ if __name__ == "__main__":
     if current_df.date.isin(update_df.date)[0]:
         # Overwrite dataframe with current values
         selection = update_df["date"] == current_df["date"][0]
-        update_df[selection] = current_df
+        update_df.loc[selection, update_df.keys()] = current_df[update_df.keys()].values
     else:
         # Append current values
         update_df = pd.concat([update_df, current_df])

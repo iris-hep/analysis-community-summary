@@ -51,15 +51,24 @@ jobs:
           --join-csv summary.csv \
           --out-csv summary-time-series.csv
 
+    - name: Generate time series plots
+      run: |
+        python plots.py
+        mkdir img
+        mv *.png img/
+
     - name: Setup files to deploy
       id: prepare
       run: |
         cat summary.md >> README.md
+        cat time_series.md >> README.md
+
         mkdir deploy
         cp README.md deploy/
         cp repo_data.json deploy/
         cp summary.csv deploy/
         cp summary.md deploy/
+        cp -r img deploy/
         ls -lhtra deploy
 
         mkdir time-series

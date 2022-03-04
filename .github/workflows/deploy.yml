@@ -58,6 +58,7 @@ jobs:
 
     - name: Setup files to deploy
       id: prepare
+      shell: bash
       run: |
         cat summary.md >> README.md
         cat time_series.md >> README.md

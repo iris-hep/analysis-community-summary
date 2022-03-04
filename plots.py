@@ -62,7 +62,7 @@ def write_markdown_section(df):
 
     with open("time_series.md", "w") as write_file:
         file_str = "\n## Time Series Plots\n"
-        file_str = f"\nCovering dates from **{dates.min()}** to **{dates.max()}**\n"
+        file_str += f"\nCovering dates from **{dates.min()}** to **{dates.max()}**\n"
 
         plots = ["stars", "forks", "watchers"]
         base_url = "https://raw.githubusercontent.com/iris-hep/analysis-community-summary/gh-pages"

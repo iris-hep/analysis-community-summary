@@ -65,7 +65,7 @@ def write_markdown_section(df):
         file_str = f"\nCovering dates from **{dates.min()}** to **{dates.max()}**\n"
 
         plots = ["stars", "forks", "watchers"]
-        base_url = "https://raw.githubusercontent.com/iris-hep/analysis-community-summary/gh-pages/"
+        base_url = "https://raw.githubusercontent.com/iris-hep/analysis-community-summary/gh-pages"
         for plot in plots:
             file_str += f"\n### {plot.capitalize()}\n\n"
             file_str += f"![{plot}]({base_url}/img/time_series_{plot}.png)\n"

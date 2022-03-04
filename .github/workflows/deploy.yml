@@ -54,8 +54,7 @@ jobs:
     - name: Generate time series plots
       run: |
         python plots.py
-        mkdir img
-        mv *.png img/
+        ls -lhtra img/
 
     - name: Setup files to deploy
       id: prepare

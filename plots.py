@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
 import numpy as np
@@ -53,7 +55,13 @@ def project_timeseries(df, value, **kwargs):
     ax.set_ylabel(ylabel, size=14)
 
     fig.tight_layout()
-    fig.savefig(f"time_series_{value}.png", facecolor="white")
+
+    # Ensure img directory exists
+    Path.cwd().joinpath("img").mkdir(parents=True, exist_ok=True)
+
+    file_types = ["png", "pdf", "svg"]
+    for extension in file_types:
+        fig.savefig(f"img/time_series_{value}.{extension}", facecolor="white")
 
 
 def write_markdown_section(df):
@@ -62,13 +70,13 @@ def write_markdown_section(df):
 
     with open("time_series.md", "w") as write_file:
         file_str = "\n## Time Series Plots\n"
-        file_str = f"\nCovering dates from **{dates.min()}** to **{dates.max()}**\n"
+        file_str += f"\nCovering dates from **{dates.min()}** to **{dates.max()}**\n"
 
         plots = ["stars", "forks", "watchers"]
         base_url = "https://raw.githubusercontent.com/iris-hep/analysis-community-summary/gh-pages"
         for plot in plots:
             file_str += f"\n### {plot.capitalize()}\n\n"
-            file_str += f"![{plot}]({base_url}/img/time_series_{plot}.png)\n"
+            file_str += f"![{plot}]({base_url}/img/time_series_{plot}.svg)\n"
 
         file_str += "\n"
 

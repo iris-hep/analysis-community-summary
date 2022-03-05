@@ -7,6 +7,12 @@ import pandas as pd
 
 
 def project_timeseries(df, value, **kwargs):
+    if value not in df.keys():
+        print(
+            f"WARNING: {value} is not a column of the DataFrame. Valid columns are: {', '.join(time_series_df.keys())}"
+        )
+        return 1
+
     scale_factor = 2.5
     fig, (ax, legend_ax) = plt.subplots(
         ncols=2,
@@ -72,11 +78,16 @@ def write_markdown_section(df):
         file_str = "\n## Time Series Plots\n"
         file_str += f"\nCovering dates from **{dates.min()}** to **{dates.max()}**\n"
 
-        plots = ["stars", "forks", "watchers"]
+        plots = ["stars", "contributors", "forks", "watchers"]
         base_url = "https://raw.githubusercontent.com/iris-hep/analysis-community-summary/gh-pages"
         for plot in plots:
-            file_str += f"\n### {plot.capitalize()}\n\n"
-            file_str += f"![{plot}]({base_url}/img/time_series_{plot}.svg)\n"
+            if plot not in df.keys():
+                print(
+                    f"WARNING: {plot} is not a column of the DataFrame. Valid columns are: {', '.join(time_series_df.keys())}"
+                )
+            else:
+                file_str += f"\n### {plot.capitalize()}\n\n"
+                file_str += f"![{plot}]({base_url}/img/time_series_{plot}.svg)\n"
 
         file_str += "\n"
 
@@ -92,6 +103,7 @@ if __name__ == "__main__":
         "alexander-held/cabinetry",
     ]
     project_timeseries(time_series_df, "stars", exclude=exclude_list)
+    project_timeseries(time_series_df, "contributors", exclude=exclude_list)
     project_timeseries(time_series_df, "forks", exclude=exclude_list)
     project_timeseries(time_series_df, "watchers", exclude=exclude_list)
 

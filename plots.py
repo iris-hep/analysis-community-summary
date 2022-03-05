@@ -78,7 +78,7 @@ def write_markdown_section(df):
         file_str = "\n## Time Series Plots\n"
         file_str += f"\nCovering dates from **{dates.min()}** to **{dates.max()}**\n"
 
-        plots = ["stars", "contributors", "forks", "watchers"]
+        plots = ["stars", "watchers", "contributors", "forks"]
         base_url = "https://raw.githubusercontent.com/iris-hep/analysis-community-summary/gh-pages"
         for plot in plots:
             if plot not in df.keys():
@@ -103,8 +103,8 @@ if __name__ == "__main__":
         "alexander-held/cabinetry",
     ]
     project_timeseries(time_series_df, "stars", exclude=exclude_list)
+    project_timeseries(time_series_df, "watchers", exclude=exclude_list)
     project_timeseries(time_series_df, "contributors", exclude=exclude_list)
     project_timeseries(time_series_df, "forks", exclude=exclude_list)
-    project_timeseries(time_series_df, "watchers", exclude=exclude_list)
 
     write_markdown_section(time_series_df)

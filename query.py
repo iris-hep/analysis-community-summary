@@ -67,6 +67,7 @@ if __name__ == "__main__":
             "watcher_count": repo.subscribers_count,
             "fork_count": repo.forks_count,
             "contributor_count": len(set(contributor_ids)),
+            "tags": repo.get_tags().totalCount,
             "releases": repo.get_releases().totalCount,
             "stargazer_ids": [
                 stargazer.id

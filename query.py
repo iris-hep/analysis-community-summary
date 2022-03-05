@@ -52,18 +52,38 @@ if __name__ == "__main__":
     github_api = Github(args.access_token)
 
     data = {}
+    # Want information on actual users, not bots
+    # https://pygithub.readthedocs.io/en/latest/github_objects/NamedUser.html
     for repo_name in repo_names:
         repo = github_api.get_repo(repo_name)
+        contributor_ids = [
+            contributor.id
+            for contributor in get_page(repo.get_contributors())
+            if contributor.type.lower() != "bot"
+        ]
+
         data[repo_name] = {
             "star_count": repo.stargazers_count,
             "watcher_count": repo.subscribers_count,
             "fork_count": repo.forks_count,
+            "contributor_count": len(set(contributor_ids)),
             "releases": repo.get_releases().totalCount,
             "stargazer_ids": [
-                stargazer.id for stargazer in get_page(repo.get_stargazers())
+                stargazer.id
+                for stargazer in get_page(repo.get_stargazers())
+                if stargazer.type.lower() != "bot"
             ],
-            "watcher_ids": [watcher.id for watcher in get_page(repo.get_subscribers())],
-            "fork_owner_ids": [fork.owner.id for fork in get_page(repo.get_forks())],
+            "watcher_ids": [
+                watcher.id
+                for watcher in get_page(repo.get_subscribers())
+                if watcher.type.lower() != "bot"
+            ],
+            "fork_owner_ids": [
+                fork.owner.id
+                for fork in get_page(repo.get_forks())
+                if fork.owner.type.lower() != "bot"
+            ],
+            "contributor_ids": contributor_ids,
         }
 
     with open("repo_data.json", "w") as write_file:

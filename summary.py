@@ -14,12 +14,16 @@ if __name__ == "__main__":
         "contributors": [],
         "forks": [],
         "reach": [],
+        "tags": [],
+        "releases": [],
     }
 
     all_stars = set()
     all_watchers = set()
     all_contributors = set()
     all_forks = set()
+    all_tags = list()
+    all_releases = list()
 
     for repo in data:
         if repo != "root-project/root":
@@ -36,11 +40,15 @@ if __name__ == "__main__":
             contributor_count = repo_data["contributor_count"]
             fork_count = repo_data["fork_count"]
             reach_count = len(reach)
+            tag_count = repo_data["tags"]
+            release_count = repo_data["releases"]
 
             all_stars.update(stargazer_ids)
             all_watchers.update(watcher_ids)
             all_contributors.update(contributor_ids)
             all_forks.update(fork_owner_ids)
+            all_tags.append(tag_count)
+            all_releases.append(release_count)
 
             table["repositories"].append(repo)
             table["stars"].append(star_count)
@@ -48,6 +56,8 @@ if __name__ == "__main__":
             table["contributors"].append(contributor_count)
             table["forks"].append(fork_count)
             table["reach"].append(reach_count)
+            table["tags"].append(tag_count)
+            table["releases"].append(release_count)
 
     all_reach = all_stars | all_watchers | all_forks
 
@@ -57,6 +67,8 @@ if __name__ == "__main__":
     table["contributors"].append(len(all_contributors))
     table["forks"].append(len(all_forks))
     table["reach"].append(len(all_reach))
+    table["tags"].append(sum(all_tags))
+    table["releases"].append(sum(all_releases))
 
     if "root-project/root" in data:
         repo = "root-project/root"
@@ -73,6 +85,8 @@ if __name__ == "__main__":
         contributor_count = repo_data["contributor_count"]
         fork_count = repo_data["fork_count"]
         reach_count = len(reach)
+        tag_count = repo_data["tags"]
+        release_count = repo_data["releases"]
 
         table["repositories"].append(repo)
         table["stars"].append(star_count)
@@ -80,6 +94,8 @@ if __name__ == "__main__":
         table["contributors"].append(contributor_count)
         table["forks"].append(fork_count)
         table["reach"].append(reach_count)
+        table["tags"].append(tag_count)
+        table["releases"].append(release_count)
 
     summary_df = pd.DataFrame(table)
 
@@ -97,6 +113,8 @@ if __name__ == "__main__":
                 "Contributors",
                 "Forks",
                 "Reach",
+                "Tags",
+                "Releases",
             ],
             index=False,
         )
@@ -117,6 +135,8 @@ if __name__ == "__main__":
             "Contributors",
             "Forks",
             "Reach",
+            "Tags",
+            "Releases",
         ],
         index=False,
     )
@@ -130,6 +150,8 @@ if __name__ == "__main__":
         file_str += "* **Forks**: Number of forks of the project on GitHub\n"
         file_str += "* **Reach**: The number of unique GitHub users who have"
         file_str += " either starred, watched, or forked the project\n"
+        file_str += "* **Tags**: The number of Git tags of the software project\n"
+        file_str += "* **Releases**: The number of software releases the project has had (on GitHub)\n"
         file_str += "\n"
 
         table_file.write(file_str)

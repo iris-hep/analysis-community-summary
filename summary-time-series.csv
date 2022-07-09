@@ -8519,3 +8519,33 @@ date,repositories,stars,watchers,forks,reach,contributors,tags,releases
 2022-07-08,scikit-hep/vector,42,8,13,52,12.0,6.0,6.0
 2022-07-08,All IRIS-HEP Analysis Systems,1574,127,398,1864,171.0,1134.0,944.0
 2022-07-08,root-project/root,1842,117,1051,2645,312.0,399.0,14.0
+2022-07-09,GooFit/AmpGen,1,12,14,24,6.0,6.0,3.0
+2022-07-09,GooFit/GooFit,110,20,35,143,18.0,17.0,14.0
+2022-07-09,diana-hep/excursion,17,4,7,21,3.0,1.0,1.0
+2022-07-09,diana-hep/madminer,61,9,33,88,9.0,47.0,46.0
+2022-07-09,gordonwatts/hep_tables,2,2,0,4,1.0,0.0,0.0
+2022-07-09,iris-hep/adl-benchmarks-index,9,8,6,19,6.0,1.0,1.0
+2022-07-09,iris-hep/func_adl,6,7,2,12,5.0,42.0,35.0
+2022-07-09,iris-hep/func_adl_servicex,0,6,2,8,2.0,28.0,27.0
+2022-07-09,iris-hep/func_adl_uproot,0,6,0,6,1.0,29.0,8.0
+2022-07-09,iris-hep/func_adl_xAOD,0,6,3,8,4.0,33.0,33.0
+2022-07-09,iris-hep/qastle,3,3,1,6,2.0,16.0,5.0
+2022-07-09,reanahub/reana,95,19,39,135,16.0,28.0,28.0
+2022-07-09,scailfin/madminer-workflow,4,3,4,6,2.0,0.0,0.0
+2022-07-09,scikit-hep/awkward-0.x,218,14,38,251,18.0,100.0,100.0
+2022-07-09,scikit-hep/awkward-1.0,555,16,55,594,28.0,178.0,176.0
+2022-07-09,scikit-hep/boost-histogram,116,10,16,129,14.0,26.0,26.0
+2022-07-09,scikit-hep/cabinetry,16,1,10,24,5.0,21.0,17.0
+2022-07-09,scikit-hep/cookie,35,2,11,39,4.0,0.0,0.0
+2022-07-09,scikit-hep/decaylanguage,34,6,14,41,6.0,33.0,33.0
+2022-07-09,scikit-hep/fastjet,8,7,6,20,5.0,9.0,9.0
+2022-07-09,scikit-hep/hist,89,9,14,100,14.0,19.0,19.0
+2022-07-09,scikit-hep/mplhep,133,4,39,162,26.0,128.0,11.0
+2022-07-09,scikit-hep/particle,113,7,17,125,9.0,38.0,38.0
+2022-07-09,scikit-hep/pyhf,215,11,65,258,25.0,44.0,29.0
+2022-07-09,scikit-hep/uhi,9,3,3,14,4.0,6.0,6.0
+2022-07-09,scikit-hep/uproot3,314,22,69,369,26.0,209.0,204.0
+2022-07-09,scikit-hep/uproot4,143,18,46,183,30.0,69.0,69.0
+2022-07-09,scikit-hep/vector,42,8,13,52,12.0,6.0,6.0
+2022-07-09,All IRIS-HEP Analysis Systems,1575,127,398,1865,171.0,1134.0,944.0
+2022-07-09,root-project/root,1843,117,1051,2646,313.0,399.0,14.0

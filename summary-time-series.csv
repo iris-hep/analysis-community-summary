@@ -11639,3 +11639,33 @@ date,repositories,stars,watchers,forks,reach,contributors,tags,releases
 2022-10-26,scikit-hep/vector,48,8,19,63,15.0,8.0,8.0
 2022-10-26,All IRIS-HEP Analysis Systems,1664,131,421,1976,177.0,1172.0,982.0
 2022-10-26,root-project/root,1931,117,1082,2760,321.0,402.0,14.0
+2022-10-27,GooFit/AmpGen,1,12,14,24,6.0,6.0,3.0
+2022-10-27,GooFit/GooFit,111,20,35,146,19.0,17.0,14.0
+2022-10-27,diana-hep/excursion,17,4,7,21,3.0,1.0,1.0
+2022-10-27,diana-hep/madminer,65,11,36,93,11.0,49.0,48.0
+2022-10-27,gordonwatts/hep_tables,2,2,0,4,1.0,0.0,0.0
+2022-10-27,iris-hep/adl-benchmarks-index,8,8,6,18,6.0,1.0,1.0
+2022-10-27,iris-hep/func_adl,6,6,2,12,5.0,42.0,35.0
+2022-10-27,iris-hep/func_adl_servicex,0,6,2,8,2.0,28.0,27.0
+2022-10-27,iris-hep/func_adl_uproot,0,6,0,6,1.0,29.0,8.0
+2022-10-27,iris-hep/func_adl_xAOD,0,6,5,10,4.0,33.0,33.0
+2022-10-27,iris-hep/qastle,3,3,1,6,2.0,16.0,5.0
+2022-10-27,reanahub/reana,100,19,40,141,15.0,29.0,29.0
+2022-10-27,scailfin/madminer-workflow,4,3,4,6,2.0,0.0,0.0
+2022-10-27,scikit-hep/awkward-0.x,217,14,38,250,18.0,100.0,100.0
+2022-10-27,scikit-hep/awkward-1.0,610,16,61,652,30.0,194.0,192.0
+2022-10-27,scikit-hep/boost-histogram,117,9,18,132,14.0,27.0,27.0
+2022-10-27,scikit-hep/cabinetry,19,1,11,28,5.0,22.0,18.0
+2022-10-27,scikit-hep/cookie,53,2,13,57,5.0,0.0,0.0
+2022-10-27,scikit-hep/decaylanguage,34,6,13,41,6.0,34.0,34.0
+2022-10-27,scikit-hep/fastjet,9,10,9,21,8.0,10.0,10.0
+2022-10-27,scikit-hep/hist,93,9,15,105,14.0,20.0,20.0
+2022-10-27,scikit-hep/mplhep,135,4,42,167,26.0,128.0,11.0
+2022-10-27,scikit-hep/particle,113,6,18,126,9.0,38.0,38.0
+2022-10-27,scikit-hep/pyhf,223,10,68,268,27.0,48.0,33.0
+2022-10-27,scikit-hep/uhi,9,3,3,14,4.0,7.0,7.0
+2022-10-27,scikit-hep/uproot3,314,22,68,369,26.0,209.0,204.0
+2022-10-27,scikit-hep/uproot4,157,21,56,204,33.0,78.0,78.0
+2022-10-27,scikit-hep/vector,48,8,19,63,15.0,8.0,8.0
+2022-10-27,All IRIS-HEP Analysis Systems,1664,131,422,1977,177.0,1174.0,984.0
+2022-10-27,root-project/root,1936,117,1083,2766,321.0,402.0,14.0

@@ -11969,3 +11969,33 @@ date,repositories,stars,watchers,forks,reach,contributors,tags,releases
 2022-11-06,scikit-hep/vector,48,8,20,63,16.0,8.0,8.0
 2022-11-06,All IRIS-HEP Analysis Systems,1668,132,423,1983,183.0,1185.0,995.0
 2022-11-06,root-project/root,1961,116,1086,2794,322.0,402.0,14.0
+2022-11-07,GooFit/AmpGen,1,12,14,24,6.0,6.0,3.0
+2022-11-07,GooFit/GooFit,112,20,35,147,19.0,17.0,14.0
+2022-11-07,diana-hep/excursion,17,4,7,21,3.0,1.0,1.0
+2022-11-07,diana-hep/madminer,65,11,37,93,12.0,49.0,48.0
+2022-11-07,gordonwatts/hep_tables,2,2,0,4,1.0,0.0,0.0
+2022-11-07,iris-hep/adl-benchmarks-index,8,8,6,18,6.0,1.0,1.0
+2022-11-07,iris-hep/func_adl,6,6,2,12,5.0,44.0,37.0
+2022-11-07,iris-hep/func_adl_servicex,0,6,2,8,3.0,30.0,29.0
+2022-11-07,iris-hep/func_adl_uproot,0,6,0,6,1.0,30.0,9.0
+2022-11-07,iris-hep/func_adl_xAOD,0,6,5,10,5.0,33.0,33.0
+2022-11-07,iris-hep/qastle,3,3,1,6,2.0,17.0,6.0
+2022-11-07,reanahub/reana,100,19,40,141,15.0,29.0,29.0
+2022-11-07,scailfin/madminer-workflow,4,3,4,6,2.0,0.0,0.0
+2022-11-07,scikit-hep/awkward-0.x,218,14,38,251,18.0,100.0,100.0
+2022-11-07,scikit-hep/awkward-1.0,611,17,61,654,30.0,196.0,194.0
+2022-11-07,scikit-hep/boost-histogram,117,9,18,132,14.0,27.0,27.0
+2022-11-07,scikit-hep/cabinetry,19,1,11,28,6.0,23.0,19.0
+2022-11-07,scikit-hep/cookie,53,2,13,57,5.0,0.0,0.0
+2022-11-07,scikit-hep/decaylanguage,35,6,13,43,7.0,34.0,34.0
+2022-11-07,scikit-hep/fastjet,10,10,9,22,9.0,11.0,11.0
+2022-11-07,scikit-hep/hist,93,9,15,105,14.0,20.0,20.0
+2022-11-07,scikit-hep/mplhep,135,4,42,167,26.0,128.0,11.0
+2022-11-07,scikit-hep/particle,113,6,18,126,10.0,38.0,38.0
+2022-11-07,scikit-hep/pyhf,225,10,68,270,27.0,48.0,33.0
+2022-11-07,scikit-hep/uhi,9,3,3,14,4.0,7.0,7.0
+2022-11-07,scikit-hep/uproot3,314,22,68,369,26.0,209.0,204.0
+2022-11-07,scikit-hep/uproot4,159,22,57,208,34.0,79.0,79.0
+2022-11-07,scikit-hep/vector,48,8,20,63,16.0,8.0,8.0
+2022-11-07,All IRIS-HEP Analysis Systems,1668,132,423,1983,183.0,1185.0,995.0
+2022-11-07,root-project/root,1961,116,1086,2794,322.0,402.0,14.0

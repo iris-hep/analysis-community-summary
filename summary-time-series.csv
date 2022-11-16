@@ -12239,3 +12239,33 @@ date,repositories,stars,watchers,forks,reach,contributors,tags,releases
 2022-11-15,scikit-hep/vector,49,8,20,64,16.0,8.0,8.0
 2022-11-15,All IRIS-HEP Analysis Systems,1676,132,424,1992,184.0,1192.0,1002.0
 2022-11-15,root-project/root,1968,116,1088,2802,321.0,402.0,14.0
+2022-11-16,GooFit/AmpGen,1,12,14,24,6.0,6.0,3.0
+2022-11-16,GooFit/GooFit,112,20,35,147,19.0,17.0,14.0
+2022-11-16,diana-hep/excursion,17,4,7,21,3.0,1.0,1.0
+2022-11-16,diana-hep/madminer,65,11,37,93,12.0,49.0,48.0
+2022-11-16,gordonwatts/hep_tables,2,2,0,4,1.0,0.0,0.0
+2022-11-16,iris-hep/adl-benchmarks-index,8,8,7,19,7.0,1.0,1.0
+2022-11-16,iris-hep/func_adl,6,6,2,12,5.0,45.0,38.0
+2022-11-16,iris-hep/func_adl_servicex,0,6,2,8,3.0,30.0,29.0
+2022-11-16,iris-hep/func_adl_uproot,0,6,0,6,1.0,30.0,9.0
+2022-11-16,iris-hep/func_adl_xAOD,0,6,5,10,5.0,34.0,34.0
+2022-11-16,iris-hep/qastle,3,3,1,6,2.0,17.0,6.0
+2022-11-16,reanahub/reana,101,19,40,142,15.0,29.0,29.0
+2022-11-16,scailfin/madminer-workflow,4,3,4,6,2.0,0.0,0.0
+2022-11-16,scikit-hep/awkward-0.x,218,14,38,251,18.0,100.0,100.0
+2022-11-16,scikit-hep/awkward-1.0,614,17,61,657,30.0,197.0,195.0
+2022-11-16,scikit-hep/boost-histogram,117,9,18,132,14.0,27.0,27.0
+2022-11-16,scikit-hep/cabinetry,20,1,11,29,6.0,23.0,19.0
+2022-11-16,scikit-hep/cookie,53,2,14,58,5.0,0.0,0.0
+2022-11-16,scikit-hep/decaylanguage,35,6,13,43,7.0,35.0,35.0
+2022-11-16,scikit-hep/fastjet,10,10,10,23,10.0,13.0,13.0
+2022-11-16,scikit-hep/hist,93,9,15,105,14.0,20.0,20.0
+2022-11-16,scikit-hep/mplhep,136,4,43,169,26.0,128.0,11.0
+2022-11-16,scikit-hep/particle,115,6,18,128,10.0,39.0,39.0
+2022-11-16,scikit-hep/pyhf,226,10,68,271,27.0,48.0,33.0
+2022-11-16,scikit-hep/uhi,9,3,3,14,4.0,7.0,7.0
+2022-11-16,scikit-hep/uproot3,314,22,68,369,26.0,209.0,204.0
+2022-11-16,scikit-hep/uproot4,160,22,56,208,34.0,79.0,79.0
+2022-11-16,scikit-hep/vector,49,8,20,64,16.0,8.0,8.0
+2022-11-16,All IRIS-HEP Analysis Systems,1677,132,424,1993,184.0,1192.0,1002.0
+2022-11-16,root-project/root,1972,116,1088,2806,321.0,402.0,14.0

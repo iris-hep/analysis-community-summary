@@ -13049,3 +13049,33 @@ date,repositories,stars,watchers,forks,reach,contributors,tags,releases
 2022-12-12,scikit-hep/vector,50,8,20,65,16.0,8.0,8.0
 2022-12-12,All IRIS-HEP Analysis Systems,1708,133,428,2026,184.0,1203.0,1012.0
 2022-12-12,root-project/root,1991,117,1098,2833,325.0,403.0,15.0
+2022-12-13,GooFit/AmpGen,1,12,14,24,6.0,6.0,3.0
+2022-12-13,GooFit/GooFit,113,20,36,149,19.0,17.0,14.0
+2022-12-13,diana-hep/excursion,18,4,7,22,3.0,1.0,1.0
+2022-12-13,diana-hep/madminer,69,11,37,97,12.0,49.0,48.0
+2022-12-13,gordonwatts/hep_tables,2,2,0,4,1.0,0.0,0.0
+2022-12-13,iris-hep/adl-benchmarks-index,9,9,7,20,7.0,1.0,1.0
+2022-12-13,iris-hep/func_adl,6,6,2,12,5.0,45.0,38.0
+2022-12-13,iris-hep/func_adl_servicex,0,6,2,8,3.0,30.0,29.0
+2022-12-13,iris-hep/func_adl_uproot,0,6,0,6,1.0,31.0,10.0
+2022-12-13,iris-hep/func_adl_xAOD,0,6,5,10,5.0,34.0,34.0
+2022-12-13,iris-hep/qastle,3,3,1,6,2.0,17.0,6.0
+2022-12-13,reanahub/reana,103,19,40,144,15.0,31.0,31.0
+2022-12-13,scailfin/madminer-workflow,4,3,4,6,2.0,0.0,0.0
+2022-12-13,scikit-hep/awkward-0.x,218,14,38,251,18.0,100.0,100.0
+2022-12-13,scikit-hep/awkward-1.0,630,17,63,674,31.0,203.0,201.0
+2022-12-13,scikit-hep/boost-histogram,117,9,18,132,14.0,27.0,27.0
+2022-12-13,scikit-hep/cabinetry,20,1,12,30,6.0,23.0,19.0
+2022-12-13,scikit-hep/cookie,55,2,15,61,5.0,0.0,0.0
+2022-12-13,scikit-hep/decaylanguage,36,6,13,44,7.0,35.0,35.0
+2022-12-13,scikit-hep/fastjet,11,10,10,24,10.0,13.0,13.0
+2022-12-13,scikit-hep/hist,96,9,15,108,14.0,20.0,20.0
+2022-12-13,scikit-hep/mplhep,138,4,44,172,26.0,128.0,11.0
+2022-12-13,scikit-hep/particle,119,6,18,132,10.0,39.0,39.0
+2022-12-13,scikit-hep/pyhf,229,10,69,275,27.0,48.0,33.0
+2022-12-13,scikit-hep/uhi,9,3,3,14,4.0,7.0,7.0
+2022-12-13,scikit-hep/uproot3,314,22,68,369,25.0,209.0,204.0
+2022-12-13,scikit-hep/uproot4,165,22,56,213,34.0,81.0,81.0
+2022-12-13,scikit-hep/vector,51,8,20,66,16.0,8.0,8.0
+2022-12-13,All IRIS-HEP Analysis Systems,1708,133,429,2027,184.0,1203.0,1013.0
+2022-12-13,root-project/root,1992,117,1099,2834,325.0,403.0,15.0

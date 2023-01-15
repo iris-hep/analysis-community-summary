@@ -14039,3 +14039,33 @@ date,repositories,stars,watchers,forks,reach,contributors,tags,releases
 2023-01-14,scikit-hep/vector,51,8,19,64,16.0,9.0,9.0
 2023-01-14,All IRIS-HEP Analysis Systems,1717,134,434,2039,184.0,1225.0,1028.0
 2023-01-14,root-project/root,2012,118,1100,2855,326.0,406.0,15.0
+2023-01-15,GooFit/AmpGen,2,12,14,25,6.0,6.0,3.0
+2023-01-15,GooFit/GooFit,113,20,36,149,19.0,17.0,14.0
+2023-01-15,diana-hep/excursion,18,4,7,22,3.0,1.0,1.0
+2023-01-15,diana-hep/madminer,70,11,38,99,12.0,49.0,48.0
+2023-01-15,gordonwatts/hep_tables,2,2,0,4,1.0,0.0,0.0
+2023-01-15,iris-hep/adl-benchmarks-index,9,9,7,20,7.0,1.0,1.0
+2023-01-15,iris-hep/func_adl,6,6,2,12,5.0,45.0,38.0
+2023-01-15,iris-hep/func_adl_servicex,0,6,2,8,3.0,30.0,29.0
+2023-01-15,iris-hep/func_adl_uproot,0,6,0,6,1.0,31.0,10.0
+2023-01-15,iris-hep/func_adl_xAOD,0,6,5,10,5.0,34.0,34.0
+2023-01-15,iris-hep/qastle,3,3,1,6,2.0,17.0,6.0
+2023-01-15,reanahub/reana,103,19,42,145,15.0,31.0,31.0
+2023-01-15,scailfin/madminer-workflow,4,3,4,6,2.0,0.0,0.0
+2023-01-15,scikit-hep/awkward-0.x,218,14,38,251,18.0,100.0,100.0
+2023-01-15,scikit-hep/awkward-1.0,639,17,67,687,31.0,216.0,207.0
+2023-01-15,scikit-hep/boost-histogram,117,9,18,132,14.0,27.0,27.0
+2023-01-15,scikit-hep/cabinetry,20,1,12,30,6.0,23.0,19.0
+2023-01-15,scikit-hep/cookie,55,2,15,61,5.0,0.0,0.0
+2023-01-15,scikit-hep/decaylanguage,34,6,13,42,7.0,35.0,35.0
+2023-01-15,scikit-hep/fastjet,11,10,10,24,10.0,16.0,16.0
+2023-01-15,scikit-hep/hist,96,9,16,109,15.0,21.0,21.0
+2023-01-15,scikit-hep/mplhep,141,5,44,175,26.0,128.0,11.0
+2023-01-15,scikit-hep/particle,121,7,18,134,10.0,40.0,40.0
+2023-01-15,scikit-hep/pyhf,231,10,69,277,27.0,48.0,33.0
+2023-01-15,scikit-hep/uhi,9,3,3,14,4.0,8.0,8.0
+2023-01-15,scikit-hep/uproot3,314,22,67,368,25.0,209.0,204.0
+2023-01-15,scikit-hep/uproot4,165,22,56,213,34.0,83.0,83.0
+2023-01-15,scikit-hep/vector,51,8,19,64,16.0,9.0,9.0
+2023-01-15,All IRIS-HEP Analysis Systems,1717,134,434,2039,184.0,1225.0,1028.0
+2023-01-15,root-project/root,2014,118,1100,2857,326.0,406.0,15.0

@@ -15299,3 +15299,33 @@ date,repositories,stars,watchers,forks,reach,contributors,tags,releases
 2023-02-25,scikit-hep/vector,52,8,19,65,16.0,10.0,10.0
 2023-02-25,All IRIS-HEP Analysis Systems,1757,133,439,2080,185.0,1245.0,1047.0
 2023-02-25,root-project/root,2049,118,1105,2893,324.0,407.0,15.0
+2023-02-26,GooFit/AmpGen,3,12,15,26,6.0,7.0,4.0
+2023-02-26,GooFit/GooFit,115,20,38,152,19.0,17.0,14.0
+2023-02-26,diana-hep/excursion,18,4,7,22,3.0,1.0,1.0
+2023-02-26,diana-hep/madminer,72,11,38,101,12.0,50.0,49.0
+2023-02-26,gordonwatts/hep_tables,2,2,0,4,1.0,0.0,0.0
+2023-02-26,iris-hep/adl-benchmarks-index,9,9,7,20,7.0,1.0,1.0
+2023-02-26,iris-hep/func_adl,7,7,3,14,5.0,51.0,44.0
+2023-02-26,iris-hep/func_adl_servicex,0,7,3,9,3.0,32.0,31.0
+2023-02-26,iris-hep/func_adl_uproot,0,7,0,7,1.0,32.0,11.0
+2023-02-26,iris-hep/func_adl_xAOD,0,6,5,10,5.0,36.0,35.0
+2023-02-26,iris-hep/qastle,3,4,3,8,2.0,17.0,6.0
+2023-02-26,reanahub/reana,106,19,42,147,15.0,32.0,32.0
+2023-02-26,scailfin/madminer-workflow,4,3,4,6,2.0,0.0,0.0
+2023-02-26,scikit-hep/awkward-0.x,219,14,38,252,18.0,100.0,100.0
+2023-02-26,scikit-hep/awkward-1.0,650,17,68,699,32.0,218.0,209.0
+2023-02-26,scikit-hep/boost-histogram,118,9,18,133,15.0,27.0,27.0
+2023-02-26,scikit-hep/cabinetry,21,1,12,31,6.0,23.0,19.0
+2023-02-26,scikit-hep/cookie,62,2,15,67,5.0,0.0,0.0
+2023-02-26,scikit-hep/decaylanguage,36,6,13,44,7.0,36.0,36.0
+2023-02-26,scikit-hep/fastjet,12,10,10,25,10.0,16.0,16.0
+2023-02-26,scikit-hep/hist,99,8,18,112,15.0,21.0,21.0
+2023-02-26,scikit-hep/mplhep,143,4,45,178,26.0,128.0,11.0
+2023-02-26,scikit-hep/particle,124,6,19,138,10.0,41.0,41.0
+2023-02-26,scikit-hep/pyhf,240,10,70,287,27.0,48.0,33.0
+2023-02-26,scikit-hep/uhi,9,3,3,14,4.0,8.0,8.0
+2023-02-26,scikit-hep/uproot3,315,22,67,369,25.0,209.0,204.0
+2023-02-26,scikit-hep/uproot4,172,22,56,219,36.0,84.0,84.0
+2023-02-26,scikit-hep/vector,52,8,19,65,16.0,10.0,10.0
+2023-02-26,All IRIS-HEP Analysis Systems,1757,133,440,2080,185.0,1245.0,1047.0
+2023-02-26,root-project/root,2049,118,1105,2893,324.0,407.0,15.0

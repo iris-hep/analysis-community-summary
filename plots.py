@@ -71,7 +71,6 @@ def project_timeseries(df, value, **kwargs):
 
 
 def write_markdown_section(df, plots):
-
     dates = df["date"]
 
     with open("time_series.md", "w") as write_file:

@@ -16529,3 +16529,33 @@ date,repositories,stars,watchers,forks,reach,contributors,tags,releases
 2023-04-07,scikit-hep/vector,53,8,19,65,16.0,10.0,10.0
 2023-04-07,All IRIS-HEP Analysis Systems,1791,135,451,2121,189.0,1262.0,1064.0
 2023-04-07,root-project/root,2080,119,1133,2949,325.0,408.0,15.0
+2023-04-08,GooFit/AmpGen,3,12,15,25,6.0,7.0,4.0
+2023-04-08,GooFit/GooFit,115,20,38,152,19.0,17.0,14.0
+2023-04-08,diana-hep/excursion,18,4,7,22,3.0,1.0,1.0
+2023-04-08,diana-hep/madminer,73,11,40,103,12.0,50.0,49.0
+2023-04-08,gordonwatts/hep_tables,2,2,0,4,1.0,0.0,0.0
+2023-04-08,iris-hep/adl-benchmarks-index,9,9,7,20,7.0,1.0,1.0
+2023-04-08,iris-hep/func_adl,7,7,3,13,5.0,53.0,46.0
+2023-04-08,iris-hep/func_adl_servicex,0,7,3,9,3.0,32.0,31.0
+2023-04-08,iris-hep/func_adl_uproot,0,7,0,7,1.0,32.0,11.0
+2023-04-08,iris-hep/func_adl_xAOD,0,6,5,10,5.0,36.0,35.0
+2023-04-08,iris-hep/qastle,3,4,3,8,2.0,17.0,6.0
+2023-04-08,reanahub/reana,107,19,44,149,16.0,33.0,33.0
+2023-04-08,scailfin/madminer-workflow,4,3,4,6,2.0,0.0,0.0
+2023-04-08,scikit-hep/awkward-0.x,218,14,39,251,18.0,100.0,100.0
+2023-04-08,scikit-hep/awkward-1.0,671,20,69,721,33.0,223.0,214.0
+2023-04-08,scikit-hep/boost-histogram,123,10,18,138,15.0,27.0,27.0
+2023-04-08,scikit-hep/cabinetry,22,1,13,31,7.0,24.0,20.0
+2023-04-08,scikit-hep/cookie,67,2,15,72,5.0,0.0,0.0
+2023-04-08,scikit-hep/decaylanguage,36,6,13,43,8.0,38.0,38.0
+2023-04-08,scikit-hep/fastjet,15,10,10,27,10.0,17.0,17.0
+2023-04-08,scikit-hep/hist,104,9,18,117,15.0,21.0,21.0
+2023-04-08,scikit-hep/mplhep,144,4,50,183,26.0,128.0,11.0
+2023-04-08,scikit-hep/particle,127,6,19,139,11.0,42.0,42.0
+2023-04-08,scikit-hep/pyhf,243,10,71,291,27.0,49.0,34.0
+2023-04-08,scikit-hep/uhi,9,3,3,14,4.0,8.0,8.0
+2023-04-08,scikit-hep/uproot3,314,22,67,368,25.0,209.0,204.0
+2023-04-08,scikit-hep/uproot4,178,21,56,225,36.0,87.0,87.0
+2023-04-08,scikit-hep/vector,53,8,19,65,16.0,10.0,10.0
+2023-04-08,All IRIS-HEP Analysis Systems,1791,135,451,2121,189.0,1262.0,1064.0
+2023-04-08,root-project/root,2081,119,1132,2949,325.0,408.0,15.0

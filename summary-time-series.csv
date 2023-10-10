@@ -21239,3 +21239,33 @@ date,repositories,stars,watchers,forks,reach,contributors,tags,releases
 2023-09-12,scikit-hep/vector,61,8,21,75,17.0,12.0,12.0
 2023-09-12,All IRIS-HEP Analysis Systems,1966,137,497,2324,211.0,1335.0,1122.0
 2023-09-12,root-project/root,2219,120,1167,3115,324.0,410.0,15.0
+2023-10-10,GooFit/AmpGen,6,12,20,31,7.0,7.0,4.0
+2023-10-10,GooFit/GooFit,119,19,39,155,19.0,17.0,14.0
+2023-10-10,diana-hep/excursion,21,4,7,25,3.0,1.0,1.0
+2023-10-10,diana-hep/madminer,77,10,39,107,12.0,50.0,49.0
+2023-10-10,gordonwatts/hep_tables,2,2,0,4,1.0,0.0,0.0
+2023-10-10,iris-hep/adl-benchmarks-index,12,10,9,25,9.0,1.0,1.0
+2023-10-10,iris-hep/func_adl,7,7,3,14,6.0,56.0,49.0
+2023-10-10,iris-hep/func_adl_servicex,0,8,4,11,3.0,32.0,31.0
+2023-10-10,iris-hep/func_adl_uproot,0,7,0,7,1.0,34.0,13.0
+2023-10-10,iris-hep/func_adl_xAOD,0,8,5,12,5.0,36.0,36.0
+2023-10-10,iris-hep/qastle,4,4,3,10,2.0,19.0,8.0
+2023-10-10,reanahub/reana,114,18,45,155,18.0,37.0,37.0
+2023-10-10,scailfin/madminer-workflow,4,3,4,6,2.0,0.0,0.0
+2023-10-10,scikit-hep/awkward-0.x,218,14,39,251,18.0,100.0,100.0
+2023-10-10,scikit-hep/awkward-1.0,747,20,74,802,33.0,259.0,234.0
+2023-10-10,scikit-hep/boost-histogram,130,10,19,146,15.0,28.0,28.0
+2023-10-10,scikit-hep/cabinetry,24,2,15,36,8.0,25.0,21.0
+2023-10-10,scikit-hep/cookie,151,6,31,164,18.0,9.0,9.0
+2023-10-10,scikit-hep/decaylanguage,39,6,14,48,9.0,41.0,41.0
+2023-10-10,scikit-hep/fastjet,16,11,11,29,12.0,23.0,23.0
+2023-10-10,scikit-hep/hist,114,8,21,127,17.0,24.0,24.0
+2023-10-10,scikit-hep/mplhep,160,4,57,205,27.0,132.0,15.0
+2023-10-10,scikit-hep/particle,133,6,22,148,12.0,44.0,44.0
+2023-10-10,scikit-hep/pyhf,260,9,75,311,28.0,52.0,37.0
+2023-10-10,scikit-hep/uhi,12,3,3,17,4.0,8.0,8.0
+2023-10-10,scikit-hep/uproot3,313,22,67,367,25.0,209.0,204.0
+2023-10-10,scikit-hep/uproot4,201,19,62,250,38.0,95.0,95.0
+2023-10-10,scikit-hep/vector,64,8,22,79,18.0,13.0,13.0
+2023-10-10,All IRIS-HEP Analysis Systems,1986,134,503,2348,215.0,1352.0,1139.0
+2023-10-10,root-project/root,2251,121,1179,3150,324.0,410.0,15.0

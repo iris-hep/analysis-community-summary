@@ -122,9 +122,11 @@ if __name__ == "__main__":
 
     # Make names links for Markdown
     summary_df["repositories"] = [
-        f"[{repo_name}](https://github.com/{repo_name})"
-        if repo_name in data
-        else repo_name
+        (
+            f"[{repo_name}](https://github.com/{repo_name})"
+            if repo_name in data
+            else repo_name
+        )
         for repo_name in summary_df["repositories"]
     ]
     table_markdown = summary_df.to_markdown(

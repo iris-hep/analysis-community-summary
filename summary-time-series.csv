@@ -27059,3 +27059,33 @@ date,repositories,stars,watchers,forks,reach,contributors,tags,releases
 2024-04-20,scikit-hep/vector,72,10,22,88,18.0,16.0,16.0
 2024-04-20,All IRIS-HEP Analysis Systems,2143,137,541,2530,238.0,1439.0,1219.0
 2024-04-20,root-project/root,2414,123,1207,3362,319.0,427.0,18.0
+2024-04-21,GooFit/AmpGen,6,14,20,32,7.0,7.0,4.0
+2024-04-21,GooFit/GooFit,124,19,41,161,19.0,17.0,14.0
+2024-04-21,diana-hep/excursion,21,4,8,26,3.0,1.0,1.0
+2024-04-21,diana-hep/madminer,79,10,42,112,11.0,50.0,49.0
+2024-04-21,gordonwatts/hep_tables,2,3,0,5,1.0,0.0,0.0
+2024-04-21,iris-hep/adl-benchmarks-index,13,10,9,26,9.0,1.0,1.0
+2024-04-21,iris-hep/func_adl,7,7,3,14,6.0,58.0,51.0
+2024-04-21,iris-hep/func_adl_servicex,0,8,4,11,3.0,32.0,31.0
+2024-04-21,iris-hep/func_adl_uproot,0,7,0,7,1.0,36.0,15.0
+2024-04-21,iris-hep/func_adl_xAOD,0,8,5,12,5.0,38.0,38.0
+2024-04-21,iris-hep/qastle,4,4,4,11,2.0,19.0,8.0
+2024-04-21,reanahub/reana,120,19,49,165,17.0,39.0,39.0
+2024-04-21,scailfin/madminer-workflow,4,3,4,6,1.0,0.0,0.0
+2024-04-21,scikit-hep/awkward-0.x,216,15,39,250,17.0,100.0,100.0
+2024-04-21,scikit-hep/awkward-1.0,792,21,79,850,37.0,279.0,248.0
+2024-04-21,scikit-hep/boost-histogram,138,11,19,155,17.0,29.0,29.0
+2024-04-21,scikit-hep/cabinetry,25,3,16,38,9.0,25.0,21.0
+2024-04-21,scikit-hep/cookie,224,10,46,247,31.0,14.0,14.0
+2024-04-21,scikit-hep/decaylanguage,41,7,14,51,9.0,45.0,45.0
+2024-04-21,scikit-hep/fastjet,18,12,11,32,12.0,24.0,24.0
+2024-04-21,scikit-hep/hist,122,9,23,137,17.0,24.0,24.0
+2024-04-21,scikit-hep/mplhep,174,5,59,223,29.0,151.0,33.0
+2024-04-21,scikit-hep/particle,143,7,23,160,13.0,45.0,45.0
+2024-04-21,scikit-hep/pyhf,271,10,78,323,29.0,54.0,39.0
+2024-04-21,scikit-hep/uhi,14,4,3,20,4.0,9.0,9.0
+2024-04-21,scikit-hep/uproot3,314,23,67,369,25.0,209.0,204.0
+2024-04-21,scikit-hep/uproot4,217,19,67,269,47.0,117.0,117.0
+2024-04-21,scikit-hep/vector,72,10,22,88,18.0,16.0,16.0
+2024-04-21,All IRIS-HEP Analysis Systems,2143,137,541,2530,238.0,1439.0,1219.0
+2024-04-21,root-project/root,2415,123,1207,3363,319.0,427.0,18.0

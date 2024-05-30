@@ -28229,3 +28229,33 @@ date,repositories,stars,watchers,forks,reach,contributors,tags,releases
 2024-05-29,scikit-hep/vector,73,9,22,88,18.0,17.0,17.0
 2024-05-29,All IRIS-HEP Analysis Systems,2174,137,547,2561,243.0,1458.0,1238.0
 2024-05-29,root-project/root,2433,123,1220,3394,318.0,429.0,19.0
+2024-05-30,GooFit/AmpGen,6,14,20,32,7.0,7.0,4.0
+2024-05-30,GooFit/GooFit,124,19,41,161,19.0,17.0,14.0
+2024-05-30,diana-hep/excursion,21,4,8,26,3.0,1.0,1.0
+2024-05-30,diana-hep/madminer,81,10,42,114,11.0,50.0,49.0
+2024-05-30,gordonwatts/hep_tables,2,3,0,5,1.0,0.0,0.0
+2024-05-30,iris-hep/adl-benchmarks-index,13,10,9,26,9.0,1.0,1.0
+2024-05-30,iris-hep/func_adl,7,7,3,14,6.0,64.0,57.0
+2024-05-30,iris-hep/func_adl_servicex,0,8,4,11,3.0,32.0,31.0
+2024-05-30,iris-hep/func_adl_uproot,0,7,0,7,1.0,36.0,15.0
+2024-05-30,iris-hep/func_adl_xAOD,0,8,5,12,5.0,38.0,38.0
+2024-05-30,iris-hep/qastle,5,4,4,12,2.0,19.0,8.0
+2024-05-30,reanahub/reana,121,19,50,166,17.0,39.0,39.0
+2024-05-30,scailfin/madminer-workflow,4,3,4,6,1.0,0.0,0.0
+2024-05-30,scikit-hep/awkward-0.x,216,15,39,250,17.0,100.0,100.0
+2024-05-30,scikit-hep/awkward-1.0,798,21,81,858,37.0,281.0,250.0
+2024-05-30,scikit-hep/boost-histogram,140,12,20,158,17.0,29.0,29.0
+2024-05-30,scikit-hep/cabinetry,26,4,16,39,9.0,25.0,21.0
+2024-05-30,scikit-hep/cookie,240,9,47,262,33.0,15.0,15.0
+2024-05-30,scikit-hep/decaylanguage,42,7,14,52,9.0,46.0,46.0
+2024-05-30,scikit-hep/fastjet,19,12,11,33,12.0,25.0,25.0
+2024-05-30,scikit-hep/hist,123,9,23,138,17.0,25.0,25.0
+2024-05-30,scikit-hep/mplhep,178,5,61,228,30.0,153.0,35.0
+2024-05-30,scikit-hep/particle,144,7,23,161,14.0,46.0,46.0
+2024-05-30,scikit-hep/pyhf,274,10,79,328,30.0,54.0,39.0
+2024-05-30,scikit-hep/uhi,14,4,3,20,4.0,9.0,9.0
+2024-05-30,scikit-hep/uproot3,314,23,67,369,25.0,209.0,204.0
+2024-05-30,scikit-hep/uproot4,221,19,68,274,47.0,122.0,122.0
+2024-05-30,scikit-hep/vector,73,9,22,88,18.0,17.0,17.0
+2024-05-30,All IRIS-HEP Analysis Systems,2174,137,548,2562,243.0,1460.0,1240.0
+2024-05-30,root-project/root,2433,123,1220,3394,318.0,429.0,19.0

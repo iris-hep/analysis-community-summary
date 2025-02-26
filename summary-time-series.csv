@@ -36389,3 +36389,33 @@ date,repositories,stars,watchers,forks,reach,contributors,tags,releases
 2025-02-25,scikit-hep/vector,84,11,31,107,23.0,25.0,25.0
 2025-02-25,All IRIS-HEP Analysis Systems,2365,137,599,2791,276.0,1522.0,1301.0
 2025-02-25,root-project/root,2785,123,1312,3824,316.0,441.0,29.0
+2025-02-26,GooFit/AmpGen,7,14,20,33,7.0,8.0,5.0
+2025-02-26,GooFit/GooFit,131,19,41,168,19.0,17.0,14.0
+2025-02-26,diana-hep/excursion,22,4,8,27,3.0,1.0,1.0
+2025-02-26,diana-hep/madminer,86,9,45,119,11.0,50.0,49.0
+2025-02-26,gordonwatts/hep_tables,2,3,0,5,1.0,0.0,0.0
+2025-02-26,iris-hep/adl-benchmarks-index,13,10,9,26,9.0,1.0,1.0
+2025-02-26,iris-hep/func_adl,7,8,4,17,6.0,66.0,59.0
+2025-02-26,iris-hep/func_adl_servicex,0,9,4,12,3.0,32.0,31.0
+2025-02-26,iris-hep/func_adl_uproot,0,7,0,7,1.0,37.0,16.0
+2025-02-26,iris-hep/func_adl_xAOD,0,8,5,12,5.0,39.0,39.0
+2025-02-26,iris-hep/qastle,5,4,5,13,2.0,20.0,8.0
+2025-02-26,reanahub/reana,129,18,56,180,21.0,42.0,42.0
+2025-02-26,scailfin/madminer-workflow,4,3,4,6,1.0,0.0,0.0
+2025-02-26,scikit-hep/awkward-0.x,215,14,39,248,17.0,100.0,100.0
+2025-02-26,scikit-hep/awkward-1.0,864,22,90,925,46.0,291.0,260.0
+2025-02-26,scikit-hep/boost-histogram,146,12,23,167,17.0,31.0,31.0
+2025-02-26,scikit-hep/cabinetry,30,4,23,49,10.0,25.0,21.0
+2025-02-26,scikit-hep/cookie,325,10,56,355,36.0,17.0,17.0
+2025-02-26,scikit-hep/decaylanguage,42,6,16,54,10.0,49.0,49.0
+2025-02-26,scikit-hep/fastjet,23,9,17,40,12.0,25.0,25.0
+2025-02-26,scikit-hep/hist,128,8,25,144,17.0,26.0,26.0
+2025-02-26,scikit-hep/mplhep,193,5,68,250,40.0,162.0,44.0
+2025-02-26,scikit-hep/particle,151,7,25,171,15.0,49.0,49.0
+2025-02-26,scikit-hep/pyhf,285,10,85,344,32.0,54.0,39.0
+2025-02-26,scikit-hep/uhi,16,5,4,22,6.0,10.0,10.0
+2025-02-26,scikit-hep/uproot3,313,23,64,366,25.0,209.0,204.0
+2025-02-26,scikit-hep/uproot4,245,21,76,302,55.0,136.0,136.0
+2025-02-26,scikit-hep/vector,85,11,31,108,23.0,25.0,25.0
+2025-02-26,All IRIS-HEP Analysis Systems,2367,137,599,2793,276.0,1522.0,1301.0
+2025-02-26,root-project/root,2788,123,1312,3827,316.0,441.0,29.0

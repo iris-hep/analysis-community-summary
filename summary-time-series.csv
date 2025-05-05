@@ -38429,3 +38429,33 @@ date,repositories,stars,watchers,forks,reach,contributors,tags,releases
 2025-05-04,scikit-hep/vector,88,10,31,110,23.0,26.0,26.0
 2025-05-04,All IRIS-HEP Analysis Systems,2407,135,603,2833,281.0,1554.0,1334.0
 2025-05-04,root-project/root,2844,120,1338,3907,312.0,446.0,33.0
+2025-05-05,GooFit/AmpGen,8,13,20,33,7.0,8.0,5.0
+2025-05-05,GooFit/GooFit,134,18,41,170,19.0,17.0,14.0
+2025-05-05,diana-hep/excursion,22,3,8,26,3.0,1.0,1.0
+2025-05-05,diana-hep/madminer,86,8,45,119,11.0,50.0,49.0
+2025-05-05,gordonwatts/hep_tables,2,2,0,4,1.0,0.0,0.0
+2025-05-05,iris-hep/adl-benchmarks-index,13,9,9,25,9.0,1.0,1.0
+2025-05-05,iris-hep/func_adl,7,7,4,16,6.0,76.0,69.0
+2025-05-05,iris-hep/func_adl_servicex,0,7,4,11,3.0,32.0,31.0
+2025-05-05,iris-hep/func_adl_uproot,0,6,0,6,1.0,37.0,16.0
+2025-05-05,iris-hep/func_adl_xAOD,0,7,6,12,5.0,45.0,45.0
+2025-05-05,iris-hep/qastle,6,3,5,13,2.0,21.0,10.0
+2025-05-05,reanahub/reana,132,18,54,181,21.0,42.0,42.0
+2025-05-05,scailfin/madminer-workflow,4,2,4,5,1.0,0.0,0.0
+2025-05-05,scikit-hep/awkward-0.x,214,13,39,246,17.0,100.0,100.0
+2025-05-05,scikit-hep/awkward-1.0,876,21,91,936,47.0,294.0,263.0
+2025-05-05,scikit-hep/boost-histogram,148,11,24,169,19.0,32.0,32.0
+2025-05-05,scikit-hep/cabinetry,30,4,23,49,11.0,25.0,21.0
+2025-05-05,scikit-hep/cookie,342,9,56,370,38.0,18.0,18.0
+2025-05-05,scikit-hep/decaylanguage,42,5,17,54,10.0,49.0,49.0
+2025-05-05,scikit-hep/fastjet,24,8,18,41,14.0,28.0,28.0
+2025-05-05,scikit-hep/hist,128,7,26,143,18.0,27.0,27.0
+2025-05-05,scikit-hep/mplhep,197,4,70,253,40.0,164.0,46.0
+2025-05-05,scikit-hep/particle,153,6,25,172,15.0,50.0,50.0
+2025-05-05,scikit-hep/pyhf,287,9,87,346,32.0,54.0,39.0
+2025-05-05,scikit-hep/uhi,18,4,4,23,6.0,10.0,10.0
+2025-05-05,scikit-hep/uproot3,312,22,64,364,25.0,209.0,204.0
+2025-05-05,scikit-hep/uproot4,249,19,79,307,57.0,138.0,138.0
+2025-05-05,scikit-hep/vector,88,10,31,110,23.0,26.0,26.0
+2025-05-05,All IRIS-HEP Analysis Systems,2407,135,603,2833,281.0,1554.0,1334.0
+2025-05-05,root-project/root,2844,120,1338,3907,312.0,446.0,33.0

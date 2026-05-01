@@ -48419,3 +48419,33 @@ date,repositories,stars,watchers,forks,reach,contributors,tags,releases
 2026-04-30,scikit-hep/vector,99,9,37,126,26.0,29.0,29.0
 2026-04-30,All IRIS-HEP Analysis Systems,2604,133,686,3091,316.0,1645.0,1425.0
 2026-04-30,root-project/root,3193,119,1517,4396,315.0,469.0,54.0
+2026-05-01,GooFit/AmpGen,10,12,21,36,8.0,8.0,5.0
+2026-05-01,GooFit/GooFit,144,16,41,178,19.0,17.0,14.0
+2026-05-01,diana-hep/excursion,22,3,8,26,3.0,1.0,1.0
+2026-05-01,diana-hep/madminer,93,7,45,126,13.0,50.0,49.0
+2026-05-01,gordonwatts/hep_tables,2,1,0,3,1.0,0.0,0.0
+2026-05-01,iris-hep/adl-benchmarks-index,15,8,9,26,9.0,1.0,1.0
+2026-05-01,iris-hep/func_adl,9,6,4,17,7.0,83.0,76.0
+2026-05-01,iris-hep/func_adl_servicex,0,6,3,9,4.0,32.0,31.0
+2026-05-01,iris-hep/func_adl_uproot,0,5,0,5,1.0,37.0,16.0
+2026-05-01,iris-hep/func_adl_xAOD,0,6,6,11,6.0,48.0,48.0
+2026-05-01,iris-hep/qastle,7,2,5,13,2.0,22.0,11.0
+2026-05-01,reanahub/reana,149,17,62,202,21.0,44.0,44.0
+2026-05-01,scailfin/madminer-workflow,5,2,4,6,2.0,0.0,0.0
+2026-05-01,scikit-hep/awkward-0.x,214,11,39,249,17.0,100.0,100.0
+2026-05-01,scikit-hep/awkward-1.0,957,17,121,1035,55.0,305.0,274.0
+2026-05-01,scikit-hep/boost-histogram,162,10,30,185,21.0,37.0,37.0
+2026-05-01,scikit-hep/cabinetry,33,3,27,54,10.0,25.0,21.0
+2026-05-01,scikit-hep/cookie,393,11,72,430,49.0,26.0,26.0
+2026-05-01,scikit-hep/decaylanguage,44,4,17,55,12.0,55.0,55.0
+2026-05-01,scikit-hep/fastjet,28,7,20,46,15.0,34.0,34.0
+2026-05-01,scikit-hep/hist,136,7,31,158,23.0,32.0,32.0
+2026-05-01,scikit-hep/mplhep,217,4,73,274,43.0,179.0,61.0
+2026-05-01,scikit-hep/particle,164,5,28,184,15.0,54.0,54.0
+2026-05-01,scikit-hep/pyhf,299,7,97,365,34.0,54.0,39.0
+2026-05-01,scikit-hep/uhi,20,4,4,25,7.0,13.0,13.0
+2026-05-01,scikit-hep/uproot3,313,21,66,368,25.0,209.0,204.0
+2026-05-01,scikit-hep/uproot4,264,17,94,337,65.0,151.0,151.0
+2026-05-01,scikit-hep/vector,99,9,37,126,26.0,29.0,29.0
+2026-05-01,All IRIS-HEP Analysis Systems,2604,133,686,3091,316.0,1646.0,1426.0
+2026-05-01,root-project/root,3197,119,1517,4400,315.0,469.0,54.0
